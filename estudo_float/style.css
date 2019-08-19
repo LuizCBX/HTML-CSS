@@ -1,0 +1,27 @@
+/**
+ estudo do float
+ @author Luiz Henrique
+*/
+
+#vermelho{
+    width: 250px;
+    height: 250px;
+    background-color: #ff0000;
+    float: left;
+}
+
+#verde{
+    width: 250px;
+    height: 250px;
+    background-color: #33ff00;
+    float: left;
+}
+
+#azul{
+    width: 250px;
+    height: 250px;
+    background-color: #00e1ff;
+    float: left;
+}
+
+
