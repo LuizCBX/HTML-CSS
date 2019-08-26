@@ -1,0 +1,10 @@
+Atividade de avaliação individual
+
+1) Desenvolver o layout 1 (formato responsivo)
+   e hospedar no webhostapp
+
+2) Criar 4 ícones de redes sociais do projeto
+   html5 css3 no canto superior direito que 
+   deverão se ajustar ao centro em cima do logo
+   quando estiver sendo visualizado pelo celular.
+

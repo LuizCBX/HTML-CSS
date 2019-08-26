@@ -3,6 +3,12 @@
  @author Luiz Henrique
 */
 
+#main{
+    max-width: 750px;
+    height: 750px;
+    margin: 0 auto;
+    background-color: #030000;
+}
 #vermelho{
     width: 250px;
     height: 250px;

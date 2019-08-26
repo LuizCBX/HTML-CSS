@@ -1,0 +1,66 @@
+/*
+*@author Luiz Henrique 
+*/
+body{
+    font-family: sans-serif;
+}
+
+
+#main{
+    max-width: 100%;
+    background-color: #ffffff;
+    margin: 0 auto; /*centraliza a div*/
+    margin-top: 10px; /*box model*/
+}
+
+
+#menu{
+    background-color: #868383;
+    color: #ffffff;
+    position: fixed;
+    width: 290px;
+    height: 300px;
+    float: left;
+    
+}
+
+#texto1{
+    background-color: #fffb00;
+    position: static;
+    color:#0e0e0d;
+    width: 1117px;
+    height: 130px;
+    text-align: center;
+    float: right;
+    
+}
+#texto2{
+    background-color: #ff0000;;
+    position: static;
+    color:#0e0e0d;
+    width: 1117px;
+    height: 450px;
+    text-align: center;
+    float: right;
+}
+#texto3{
+    background-color: #00ffff;
+    position: static;
+    color:#0e0e0d;
+    width: 1117px;
+    height: 250px;
+    text-align: center;
+    float: right;
+}
+
+
+#rodape{
+    width: 100%;
+    padding: 10px;
+    background-color: #000000;
+    color: #ffffff;
+    position: fixed;
+    right:0px;
+    bottom: 0px;  
+    text-align: center;
+}

@@ -1,0 +1,40 @@
+/*
+@author Luiz Henrique
+Menu 3 - Centro
+*/
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+
+nav{
+    width: 100%; /*Responsivo*/
+    text-align: center; 
+}
+
+nav ul li{
+    display: inline-block; /*Transforma o bloco em linha*/
+}
+
+nav ul{
+    list-style: none; /* remover os bullets */
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    overflow: hidden; /*completa a largura total com o background */
+
+}
+
+
+nav ul li a {
+    text-decoration: none;/*Tira o sublinhado*/
+    color: #ffffff;
+    padding: 10px;
+    display: block; /*Transforma em blocos clicaveis*/
+
+}
+
+nav ul li a:hover{
+    background-color: #e9a208;
+}
