@@ -30,4 +30,9 @@
     float: left;
 }
 
-
+#amarelo{
+    width: 250px;
+    height: 250px;
+    background: #fff000;
+    clear: both; /* Deixa o objeto no mesmo contexto (nivel) */
+}
