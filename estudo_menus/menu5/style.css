@@ -1,0 +1,102 @@
+/*
+* Estudo dos menus, Menu DROP responsivo
+* @Luiz Henrique
+*/
+
+/*O bloco de codigo abaixo remove o padrao dos navegadores*/
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+h1{
+    margin: 20px;
+}
+
+nav{
+    width: 100%;
+    position: static;
+}
+
+nav ul{
+    list-style: none;
+    background-color: #000600;
+    overflow: hidden; /*Mostrar todo background*/
+    padding: 10px;
+
+}
+
+nav > ul > li {
+    float: left;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 15px;
+    transition: all 0.5s;
+    display: block;
+}
+
+
+nav ul li:hover{
+
+    background: #a51313;
+    transition: all 0.5s;
+}
+
+nav li ul{ /*Esconde li ul */
+    display: none;
+} 
+
+nav li:hover ul{ /*Mostra li ul*/
+    display: block;
+    position: absolute;
+}
+
+.Mobile{ /* Não mostra a classe criada nas telas acima de 480px*/
+    display: none;
+}
+
+
+/* Desenhando um triangulo com CSS */
+/*Desenha apos o conteudo*/
+.Detalhes:after{
+    content:''; /* inserir4 conteudo no html*/
+    border: 5px solid transparent;
+    border-top-color: #00ff00;
+    display: inline-block;
+    vertical-align: middle; /* alinhamento vertical*/
+}
+
+/************ Classe usada para fixar o menu ***************/
+.Fixar{
+    position: fixed;
+}
+
+
+/* Tratamento responsivo */
+@media screen and (max-width: 480px){
+    /* Para criar um estilo em uma classe usamos o (.) = ponto.*/
+    .Mobile{
+        text-decoration: none;
+        background-color: #000616;
+        color: #ffffff;
+        padding: 15px;
+        display: block;
+    }
+
+    nav > ul > li{
+        float: none;
+    }
+
+    nav ul{
+        display: none;
+    }
+
+}

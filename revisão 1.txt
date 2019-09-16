@@ -1,0 +1,32 @@
+Revisão:
+
+position: static
+(default) não aceita parâmetros (top, right, bottom, left)
+
+position: absolute
+aceita os parâmetros (top, right, bottom, left) e se posiciona de forma absoluta, porém não fixa
+*** posição default (top, left 0)
+
+position: fixed (usado em menus)
+aceita os parâmetros (top, right, bottom, left) e se posiciona de forma absoluta, porém fixa  
+
+___________________________________________________________
+FLOAT:
+Quando um elemento flutua, ele cria um novo contexto, 
+sobe 1 nível
+
+clear: both; /* deixa o objeto no mesmo contexto (nível) */
+
+___________________________________________________________
+DISPLAY
+
+block (padrão) ocupa a linha inteira não permitindo outros objetos
+
+inline /* não aceita as propriedades width e height */
+
+none: não exibe o elemento
+
+
+
+
+
