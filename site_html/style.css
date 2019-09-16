@@ -1,0 +1,224 @@
+/**
+* Folha de estilo do site html5 + CSS3
+* @author Professor José de Assis
+*/
+
+/*************** Importando fontes ****************/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans&display=swap');
+
+/*************** Principal *****************/
+/* o bloco abaixo compatibiliza os navegadores */
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #e8e8e8;
+}
+
+/*
+ # (id) . (class) - Podemos criar um estilo para a TAG, id ou class
+*/
+
+#main{
+    max-width: 1024px;
+    background-color: #ffffff;
+    margin: 0 auto; /* centraliza a div */
+    margin-top: 50px; /* box model */
+}
+
+/******************* header *********************/
+
+
+#social{
+    float: right;
+    /* box model completo especificando top right bottom left */
+    padding: 20px 20px 0px 0px;    
+}
+
+#logo {
+    /* box model completo */
+    padding: 20px;
+}
+
+/*********************** Menu *************************/
+nav {
+    width: 100%;
+    max-width: 1024px;
+    position: absolute;   
+}
+
+nav ul{
+    list-style: none;
+  
+}
+
+nav > ul > li{
+    float: left;
+    width: 25%;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #239c7e;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    transition: all 0.4s;
+}
+
+nav ul li a:hover{
+    background-color: #29b995;
+    transition: all 0.4s;
+}
+
+nav li ul{
+    display: none;
+}
+
+nav li:hover ul{
+    display: block;        
+}
+
+.Detalhes:after{ 
+	content:''; 
+	border: 5px solid transparent;
+	border-top-color: #e8e8e8;
+	display: inline-block;
+	vertical-align: middle;	
+}
+
+.Mobile{
+    display: none;
+}
+
+/* classe manipulada pelo JS/JQUERY */
+.Fixar{
+    position: fixed;
+    top: 0;
+}
+/***CARDS****/
+#destaque{
+    margin-top: 30px;
+    text-align: center;
+
+}
+
+
+/******** Banner **********/
+#banner{
+    margin-top: 100px;
+    height: 350px;
+    background-image: url('imagens/banner.jpg');
+    /* FLEXIBILIZANDO O LAYOUT PARA ALINHAMENTO VERTICAL*/
+    display: flex;
+    align-items: center;
+}
+
+#banner h1{
+    font-family:   'Montserrat', sans-serif;
+    color: #ffffff;
+    text-align: center;
+    font-size: 4em;
+    text-transform: uppercase; /*DEIXA tudo maiusculo*/
+}
+/***** HEADING line******/
+#heading{
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center;
+}
+
+#heading h2{
+    font-weight: 400;
+}
+
+#html5{
+    font-weight: 600; /*negrito*/
+    color: #239c7e;
+}
+
+#css3{
+    font-weight: 600;
+    color: #239c7e;
+}
+
+/***************** RODAPÉ ********************/
+footer{
+    background-color: #239c7e;
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px;
+    color: #ffffff;
+    font-size: 0.75em; /*responsividade ver tabela de conversão */
+}
+/****************** SELO *******************/
+#selo{
+    max-width: 1024px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+/*************** Tratamento Responsivo ***************/
+/**** tornar todas as imagens responsivas ****/ 
+img {
+    max-width: 100%;
+}
+
+/* o bloco abaixo modifica o comportamento do CSS para telas
+com tamanho de até 480px */
+@media screen and (max-width: 480px){
+    
+    /*************** header ****************/
+    #main{
+        margin: 0;
+
+    }
+    
+    header{
+        text-align: center; /* centralizar todos elementos */
+    }
+
+   #social{
+       float: none;
+       padding-right: 0;
+   }
+
+   /***************** Menu *****************/
+   .Mobile{
+       display: block;
+       background-color: #e15a1f;
+       color: #ffffff;
+       text-decoration: none;
+       padding: 15px;
+   }
+
+   nav >ul > li{
+       float: none;
+       width: 100%;
+   }
+
+   nav ul{
+       display: none;
+   }
+
+   /*** melhorando UX (User eXperience) ***/
+   nav ul li a{
+       text-align: left;
+   }
+
+   nav li ul li{
+       background-color: #044364;
+   }
+
+   nav li ul li a{
+        background-color: #cf5629;
+        padding-left: 40px;
+   }
+}
+
