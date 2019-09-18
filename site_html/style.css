@@ -101,17 +101,12 @@ nav li:hover ul{
     position: fixed;
     top: 0;
 }
-/***CARDS****/
-#destaque{
-    margin-top: 30px;
-    text-align: center;
 
-}
 
 
 /******** Banner **********/
 #banner{
-    margin-top: 100px;
+    margin-top: 52px;
     height: 350px;
     background-image: url('imagens/banner.jpg');
     /* FLEXIBILIZANDO O LAYOUT PARA ALINHAMENTO VERTICAL*/
@@ -148,6 +143,127 @@ nav li:hover ul{
     color: #239c7e;
 }
 
+/************** DESTAQUE ******************/
+#destaque{
+    max-width: 1024px;
+    height: 320px;
+}
+
+
+.card{
+    width: 30%;
+    height: 320px;
+    float: left;
+    margin-left: 2.56%;
+    border: 1px solid #a8a8a8;
+    text-align: center;
+    position: relative; /*Posicionamento*/
+    
+}
+
+.card h3{
+    text-align: center;
+}
+.card p{
+    padding: 15px;
+    text-align: left;
+}
+
+.card a{
+    width: 80px; /*Só é aceito em position absolute*/
+    height: 30px;
+    background-color: #11ee77;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight:bold;
+    position: absolute;
+    text-align: center;
+    bottom: 7px;
+    right: 7px;
+    
+}
+
+.card a:hover{
+    background-color: #239c7e;
+    transition: 1s;
+}
+
+/****CONTEUDO **/
+
+.conteudo{
+    margin-top: 102px;
+    padding: 20px;
+    text-align: center;
+}
+#contato{
+    padding-top: 102px;; 
+    width: 70%;
+    margin: 0 auto;
+}
+
+#contato h1{
+    margin-bottom: 20px;
+}
+
+#contato input[type=text]{
+    width: 100%;
+    border: solid 1px #11ee77;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px; /*Arredondar os cantos*/
+}
+
+#contato textarea{
+    width: 100%;
+    border: 1px solid #11ee77;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    resize: none;
+    padding: 10px 10px 40px 10px;
+}
+
+#contato input[type=submit]{
+    background-color: #11ee77;
+    border: 1px solid #000000;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px 25px 10px 25px;
+}
+
+#contato input[type=submit]:hover{
+    background-color: #242c28;
+}
+
+/*****IMAGENS CURSOS******/
+
+.conteudo img{
+    max-width:200px;
+    max-height:150px;
+    width: auto;
+    height: auto;
+}
+
+/************ CLASS CONTEUDO SOBRE HTML & CSS ****************/
+
+.conteudo p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 150px 0px 150px;
+}
+
+.conteudo h1{
+    text-align: center;
+}
+
+.conteudo h2{
+
+    margin-top: 55px;
+
+}
+
+/*********FORMULARIO********/
+
 /***************** RODAPÉ ********************/
 footer{
     background-color: #239c7e;
@@ -156,6 +272,10 @@ footer{
     padding: 20px;
     color: #ffffff;
     font-size: 0.75em; /*responsividade ver tabela de conversão */
+}
+
+footer p{
+    letter-spacing: 4px;
 }
 /****************** SELO *******************/
 #selo{
@@ -198,7 +318,11 @@ com tamanho de até 480px */
        padding: 15px;
    }
 
-   nav >ul > li{
+   nav{
+       z-index: 3; /*ELEVA 3 camadas*/
+   }
+
+   nav > ul > li{
        float: none;
        width: 100%;
    }
@@ -220,5 +344,59 @@ com tamanho de até 480px */
         background-color: #cf5629;
         padding-left: 40px;
    }
+    /********* BANNER *************/
+    #banner{
+        height: 175px;
+    }
+
+    #banner h1{
+        font-size: 1.5em;
+    }
+
+
+    /*********** HEADING *************/
+    #heading{
+        width: 90%;
+        padding: 20px;
+    }
+    /*********** CARDS ***********/
+    #destaque{
+        max-width: 315px;
+        margin: 0 auto;
+        height: 320px;
+    }
+
+    .card{
+        float: none;
+        width: 100%;
+        height: 320px;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    /**/
+    .conteudo h2{
+        margin-top: -185px;
+    }
+
+    /****HTML3*****/
+    .video{
+        width: 285px;
+        height: 200px;
+    }
+
+    .conteudo p{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+    
+    .conteudo h2{
+    
+        margin-top: 55px;
+    
+    }
+    
+
 }
 
