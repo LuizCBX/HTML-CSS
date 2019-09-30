@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Caixa PDV</title>
+</head>
+<body>
+    <h1>Ponto de Venda</h1>
+    <form name="frmPdv">
+        <input type="text" placeholder="R$ Valor total" name="txtValor" size="10"> Desconto
+        do produto:
+        <input type="text" placeholder="% Desconto" name="txtDesconto" size="7">
+        <p><input type="button" value=" Calcular " onclick="calcularDesconto()"></p>
+        <p><input type="text" placeholder="Com desconto" name="txtComDesconto" size="8" disabled></p>
+        <hr>
+        <p>
+            Coloque o valor pago: <input type="text" placeholder="Valor pago" name="txtValorPago" size="10">
+            <input type="button" value="Calcular Troco" onclick="calcularTroco()">
+            <input type="text" placeholder="Troco" name="txtTroco" size="8" disabled>
+        </p>
+        <p><input type="reset" value="Novo cliente"></p>
+    </form>
+    <script src ="../scripts/pdv.js"></script>
+
+</body>
+</html>

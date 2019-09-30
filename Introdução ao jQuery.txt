@@ -1,0 +1,41 @@
+Intodução a JQuery.
+- Biblioteca do Java Script (conjunto de funções prontas para uso)
+- Substitui as maiores e mais complicadas tarefas do JavaScript
+
+Obtendo a biblioteca:
+https://jquery.com/
+ou CDN (google)
+https://developers.google.com/speed/libraries/
+
+sintaxe (a função executa automaticamente)
+--------------------------------------------------------
+$() -> função anonima
+
+function(){ -> função normal
+
+}
+--------------------------------------------------------
+$(function(){
+
+})
+--------------------------------------------------------
+// no JQuery as funções podem se comportar como a estrutura
+if else
+
+$(function(){
+ //verdadeiro
+},function(){
+ //falso
+})
+--------------------------------------------------------
+// após carregamento completo da página (boa prática)
+$(document).ready(function(){
+
+})
+--------------------------------------------------------
+// template
+$(document).ready(function(){
+  $(function(){
+
+  })
+})

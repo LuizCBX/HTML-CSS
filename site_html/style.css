@@ -108,7 +108,6 @@ nav li:hover ul{
 #banner{
     margin-top: 52px;
     height: 350px;
-    background-image: url('imagens/banner.jpg');
     /* FLEXIBILIZANDO O LAYOUT PARA ALINHAMENTO VERTICAL*/
     display: flex;
     align-items: center;
@@ -160,6 +159,7 @@ nav li:hover ul{
     position: relative; /*Posicionamento*/
     
 }
+
 
 .card h3{
     text-align: center;
@@ -262,7 +262,39 @@ nav li:hover ul{
 
 }
 
+
+/**LINK PROJETO**/
+.projetos a{
+    padding: 5px;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #239c7e;
+    display: block;
+    transition: all 0.4s;
+    margin-right: 40%;
+    margin-left: 40%;
+   
+}
+
+.projetos a:hover{
+    background-color: #13221a;
+    
+}
+
+/** BARRA DE PESQUISA*/
+.pesquisa{
+    width: 40%;
+    margin-left: 60%;
+}
+
 /*********FORMULARIO********/
+
+/***  SETA PARA O TOPO***/
+
+.Top{
+    float: right;
+    cursor: pointer;
+}
 
 /***************** RODAPÉ ********************/
 footer{

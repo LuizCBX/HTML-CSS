@@ -12,18 +12,27 @@
         <!-- link com a biblioteca JQUERY -->
         <script src="scripts/jquery-3.4.1.min.js"></script>
     </head>
-    <body>
+    <body onload="slide1()">
+
         <div id="main">
+
             <header>
                 <div id="social">
                     <a href="https://www.youtube.com/user/ProfessorJosedeAssis" target="_blank"><img src="imagens/youtube.png" alt="youtube"></a>
-                    <a href="https://www.facebook.com/professorjosedeassis" target="_blank"><img src="imagens/facebook.png" alt="facebook"></a>
+                    <a href="facebook.com/profile.php?id=100003637901404" target="_blank"><img src="imagens/facebook.png" alt="facebook"></a>
                     <a href="https://twitter.com/joseassis" target="_blank"><img src="imagens/twitter.png" alt="twitter"></a>
-                    <a href="https://www.linkedin.com/in/professorjosedeassis" target="_blank"><img src="imagens/linkedin.png" alt="linkedin"></a>
+                    <a href="https://www.linkedin.com/in/luiz-henrique-silva-santos-bb372b163/" target="_blank"><img src="imagens/linkedin.png" alt="linkedin"></a>
+                    
                 </div>
+                
                 <div id="logo">
                     <a href="index.html"><img src="imagens/logo.png" title="HTML5 e CSS3" alt="html5 css3"></a>
+
                 </div>                
+                <div class="pesquisa">
+                    <script async src="https://cse.google.com/cse.js?cx=006092348871132212747:x47qqkpf0mm"></script>
+                    <div class="gcse-search"></div>
+                </div>
             </header>
             <nav class="Menu">
                 <a href="#" class="Mobile">&#9776; Menu</a>
@@ -34,14 +43,16 @@
                         <ul>
                             <li><a href="html5/html5.html">html5</a></li>
                             <li><a href="css3/css3.html">css3</a></li>
+                            <li><a href="javascript/javascript.html">javascript</a></li>
                         </ul>                 
                     </li>
                     <li><a href="contato.html">Contato</a></li>
                 </ul>
             </nav>
-            <section id="banner">
+            <div>
+                <img src="imagens/banner4.jpg" alt="slideshow" id="banner">
                 <h1>Primeiros passos com HTML5 e CSS3</h1>
-            </section>
+            </div>
             <section id="heading">
                 <h2>Aprenda <span id="html5">HTML5</span> e <span id="css3">CSS3</span> de forma prática e divertida desenvolvendo passo a passo um site responsivo</h2>
             </section>
@@ -59,12 +70,15 @@
                     <a href="css3/css3.html">css3</a>
                 </div>
                 <div class = "card">
-                    <img src="imagens/projeto.png" alt="html5">
-                    <h3>Projeto</h3>
-                    <p>Acesse o meu canal do youtube para aprender a desenvolver este projeto passo a passo.</p>
-                    <a href="https://www.youtube.com/playlist?list=PLbEOwbQR9lqxyD8nncsnGOLSyKK2rPrJX" target="_blank">Projeto</a>
+                    <img src="imagens/javascript.jpg" alt="javascript">
+                    <h3>JavaScript</h3>
+                    <p>JS é uma linguagem de programação interpretada de alto nível, caracterizada também, como dinâmica.</p>
+                    <a href="javascript/javascript.html">javascript</a>
                 </div>
             </section>
+
+
+            
             <footer>
                 <p>©2019 - Luiz Henrique</p>
             </footer>
@@ -77,6 +91,7 @@
             </a>
         </div>
     <!-- scripts JS/JQUERY usados no menu reponsivo -->
+    <script src="scripts/slide.js"></script>
     <script src="scripts/menuresponsivo.js"></script>
     <script src="scripts/fixamenu.js"></script>
     <script src="scripts/removeclick.js"></script>	        

@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    float: left;
+    padding: 18px;
+}
+
+img{
+    border: #21c9cf 1px solid;
+    /*cursor: pointer; /*Transforma o cursor em ponteiro*/
+}

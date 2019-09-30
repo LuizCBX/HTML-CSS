@@ -8,11 +8,13 @@
     <title>HTML3</title>
     <link rel="shortcut icon" href="../imagens/favicon.png">
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/lightbox.css">
     <!-- link com a biblioteca JQUERY -->
     <script src="../scripts/jquery-3.4.1.min.js"></script>
 </head>
 
 <body>
+ 
     <div id="main">
         <header>
             <div id="social">
@@ -27,6 +29,10 @@
             <div id="logo">
                 <a href="index.html"><img src="../imagens/logo.png" title="HTML5 e CSS3" alt="html5 css3"></a>
             </div>
+            <div class="pesquisa">
+                <script async src="https://cse.google.com/cse.js?cx=006092348871132212747:x47qqkpf0mm"></script>
+                <div class="gcse-search"></div>
+            </div>
         </header>
         <nav class="Menu">
             <a href="#" class="Mobile">&#9776; Menu</a>
@@ -37,6 +43,7 @@
                     <ul>
                         <li><a href="../html5/html5.html">html5</a></li>
                         <li><a href="../css3/css3.html">css3</a></li>
+                        <li><a href="../javascript/javascript.html">javascript</a></li>
                     </ul>
                 </li>
                 <li><a href="../contato.html">Contato</a></li>
@@ -44,7 +51,11 @@
         </nav>
         <center>
             <section class="conteudo">
-                <h1> HTML5 </h1>
+
+                    <a href="../imagens/inserir_html.jpg" data-lightbox="img-1" data-title="HTML"><img src="../imagens/inserir_html.jpg" alt="Imagem HTML"></a>
+                    <br>
+                    <a href="../imagens/oqhtml.png" data-lightbox="img-1" data-title="HTML"><img src="../imagens/oqhtml.png" alt="Imagem HTML"></a>
+
                 <p>
                     HTML é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem
                     ser interpretados por navegadores. A tecnologia é fruto da junção entre os padrões HyTime e SGML.
@@ -81,12 +92,12 @@
 
                 <h2>Quer aprender mais sobre TI?</h2>
                 <br>
-                <a href="http://professorramos.com/" target="_blank"><img src="../imagens/jose.jpg"  alt="Professor José de Assis" title="Professor José de Assis"></a>
+                <a href="http://191.252.201.88/" target="_blank"><img src="../imagens/jose.jpg"  alt="Professor José de Assis" title="Professor José de Assis"></a>
                 <br>
                 <a href="http://professorramos.com/" target="_blank"><img src="../imagens/ramos.png" alt="Professor Ramos"
                         title="Professor Ramos"></a>
                 <br>
-                <a href="http://professorramos.com/" target="_blank"><img src="../imagens/vaamonde.png" alt="Professor Vaamonde"
+                <a href="https://sites.google.com/view/procedimentosemti/p%C3%A1gina-inicial" target="_blank"><img src="../imagens/vaamonde.png" alt="Professor Vaamonde"
                         title="Professor Vaamonde"></a>
                 <br>
                 <a href="http://professorramos.com/" target="_blank"><img src="../imagens/maujor.jpg" alt="Maujor"
@@ -105,6 +116,7 @@
         </center>
 
     </div>
+    <img src="../imagens/seta_topo.png" class="Top" alt="Seta topo" title="Topo do site">
     <footer>
         <p>©2019 - Luiz Henrique</p>
     </footer>
@@ -115,6 +127,8 @@
         </a>
     </div>
     <!-- scripts JS/JQUERY usados no menu reponsivo -->
+    <script src="../scripts/topo.js"></script>
+    <script src="../js/lightbox.js"></script>
     <script src="../scripts/menuresponsivo.js"></script>
     <script src="../scripts/fixamenu.js"></script>
     <script src="../scripts/removeclick.js"></script>

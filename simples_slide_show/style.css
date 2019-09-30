@@ -1,0 +1,13 @@
+#main{
+    max-width: 1080px;
+    margin: 0 auto; /* CENTRALIZA*/
+}
+
+img{
+    width: 100%;
+}
+
+span{
+    width: 100%;
+    margin: 0 auto;
+}
