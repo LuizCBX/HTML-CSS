@@ -1,0 +1,38 @@
+/*
+* One Page Site
+* @Luiz Henrique
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.Layout{
+    background-image: url('imagem1.jpg');
+    height: 350px;
+    background-size: cover; /*Mantem o maior tamanho sem repetição*/
+    background-position: center; /*centraliza a imagem de background*/
+    padding-top: 200px;   
+    background-attachment: fixed; /*fixar background*/
+}
+
+.Layout p{
+    text-align: center;
+    color: #ffffff;
+    font-size: 2.5em;
+}
+
+.Modulo{
+    background-color: #ffffff;
+}
+
+.Destaque{
+    padding: 150px 0px 150px 0px;
+    max-width: 1000px; /*espaçamento interno*/
+    margin: 0 auto; /*centralizar*/
+}
