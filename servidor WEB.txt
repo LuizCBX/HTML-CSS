@@ -1,0 +1,116 @@
+ userleoInstalação e configuração de um servidor WEB Dinâmico
+
+Passo 1)
+Instalar o Debian 10 (pesonalizar a instalação para o perfil
+de servidor WEB)
+
+Passo 2)
+Configurar um IP Fixo
+
+vi /etc/network/interfaces
+# modificar
+iface enp0s3 inet static
+address 10.26.45.xxx (substituir pelo IP)
+netmask 255.255.255.0
+network 10.26.45.0
+broadcast 10.26.45.255
+gateway 10.26.45.1
+dns-nameservers 8.8.8.8 8.8.4.4
+
+salvar, sair (wq) e reiniciar o servidor (reboot)
+Testar a rede pingando um site externo e também pingando o
+servidor à partir do PC real (cmd)
+
+ip a (verificar o ip no Linux)
+systemctl status apache2 (verificar o status do serviço)
+abrir o navegador de internet e apontar o ip do serrvidor
+apt update
+apt install vim
+
+Passo 3)
+Instalar um serviço de FTP
+apt install vsftpd
+
+### Editar o arquivo vsftpd.conf
+vim /etc/vsftpd.conf
+<es><:>set number
+# descomentar a linha 31 (permissão para gravação)
+salvar e sair <esc><:><wq>
+systemctl restart vsftpd
+
+### Criar um usuário ftp (com acesso apenas ao diretório html)
+useradd -d /var/www/html webmaster
+passwd webmaster
+chown -R webmaster:webmaster /var/www/html
+
+abrir o filezilla e testar o acesso via ftp
+
+Passo 4)
+Instalar o banco de dados MariaDB (fork MySQL)
+apt install mariadb-server
+### aplicar o script de segurança
+mysql_secure_installation
+mariadb --version (verificar a versão)
+mariadb (executar)
+show databases;
+## criar um banco de dados para o wordpress
+create database wordpress;
+show databases;
+select user,host from mysql.user;
+## criar um usuário com privilégios no banco de dados wordpress
+grant all on wordpress.* to 'admin'@'localhost' identified by
+'123@Senac' with grant option;
+exit
+
+Passo 5)
+Instalar o php
+cd /var/www/html
+vim info.php
+<?php
+  phpinfo();
+?>
+<esc><:>wq
+
+apt install php libapache2-mod-php php-mysql
+
+### reiniciar o apache
+systemctl restart apache2
+php -version
+
+Passo 6)
+Instalar o wordpress
+
+### remover todos os arquivos do diretório html
+cd /var/www/html
+pwd
+rm -r *
+
+cd /tmp
+### download da última versão
+wget https://wordpress.org/latest.tar.gz
+### descompactar o arquivo latest.tar.gz
+tar -xzvf latest.tar.gz
+### copiar sincronizando as permissões o conteúdo da pasta
+### wordpress para o diretório de hospedagem padrão
+rsync -avP wordpress/ /var/www/html
+### Configurar o apache como "DONO" do wordpress
+cd /var/www/html
+ls -l
+chown -R www-data:www-data /var/www/html
+
+Passo 7)
+Acessar o servidor web e seguir as instruções do wordpress
+
+
+
+
+
+
+
+
+
+
+
+
+
+
